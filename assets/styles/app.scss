@@ -1,6 +1,4 @@
 @import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 :root {
     --background-color: #f9f9f9;
@@ -8,8 +6,6 @@
     --background-card: #94B49F;
     --color: black;
     --color-bis: #CEE5D0;
-    --title: 'Amiri';
-    --text: 'Roboto';
 }
 
 * {
@@ -22,5 +18,5 @@
     background-color: var(--background-color);
     color: var(--color);
   }
-  
+
   
