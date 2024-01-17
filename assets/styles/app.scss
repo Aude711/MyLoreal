@@ -19,8 +19,6 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    background-color: var(--background-color);
-    color: var(--color);
   }
 
 .camille{
@@ -39,4 +37,26 @@
   scroll-behavior: smooth;
   background-color: var(--background-color);
   color: var(--color);
+}
+
+.navbar {
+  width: 85%;
+  background-color: var(--background-card);
+  overflow: auto;
+  width: auto;
+  border-radius: 1rem;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: var(--background-color);
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
 }
