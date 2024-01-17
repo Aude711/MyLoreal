@@ -1,4 +1,17 @@
 @import "~bootstrap/scss/bootstrap";
+$widthPic:20rem;
+$heightPic:13rem;
+$borderRadiusPic:1.25rem;
+$boxShadowPic:0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
+
+@mixin myPicture($x, $y, $borderRadiusPic, $boxShadowPic) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusPic;
+    box-shadow: $boxShadowPic;
+}
+
+
 
 :root {
     --background-color: #f9f9f9;
@@ -15,6 +28,16 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    background-color: var(--background-color);
-    color: var(--color);
   }
+
+
+.card-date {
+
+    background-color: var(--background-card);
+    @include myPicture(
+        ($widthPic),
+        ($heightPic),
+        ($borderRadiusPic),
+        ($boxShadowPic)
+    );
+}
