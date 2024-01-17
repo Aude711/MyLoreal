@@ -13,6 +13,24 @@
 }
 
 * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+    color: var(--color);
+  }
+
+.camille{
+  display: flex;
+  justify-content: flex-end;
+  height: 5rem;
+}
+
+.camille img{
+  border-radius: 50%;
   padding: 0;
   margin: 0;
   list-style: none;
