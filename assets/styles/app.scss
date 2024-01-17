@@ -1,2 +1,20 @@
-//start coding by removing this file and adding yours ;)
-@import "wcs";
+@import "~bootstrap/scss/bootstrap";
+
+:root {
+    --background-color: #f9f9f9;
+    --link-hover: #ECB390;
+    --background-card: #94B49F;
+    --color: black;
+    --color-bis: #CEE5D0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+    color: var(--color);
+  }
