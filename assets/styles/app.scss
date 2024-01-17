@@ -8,6 +8,8 @@
     --background-card: #94B49F;
     --color: black;
     --color-bis: #CEE5D0;
+    --title: 'Amiri';
+    --text: 'Roboto';
 }
 
 * {
@@ -20,3 +22,4 @@
     background-color: var(--background-color);
     color: var(--color);
   }
+  
