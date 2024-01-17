@@ -1,16 +1,22 @@
 @import "~bootstrap/scss/bootstrap";
-$widthPic:20rem;
-$heightPic:13rem;
-$borderRadiusPic:1.25rem;
-$boxShadowPic:0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
+$widthCard:20rem;
+$widthSmallCard:19rem;
+$heightSmallCard:3rem;
+$heightCard:13rem;
+$borderRadiusCard:1.25rem;
+$boxShadowCard:0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
 
-@mixin myPicture($x, $y, $borderRadiusPic, $boxShadowPic) {
+@mixin card($x, $y, $borderRadiusCard, $boxShadowCard) {
     width: $x;
     height: $y;
-    border-radius: $borderRadiusPic;
-    box-shadow: $boxShadowPic;
+    border-radius: $borderRadiusCard;
+    box-shadow: $boxShadowCard;
 }
-
+@mixin smallCard($x, $y, $borderRadiusSmallCard) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusSmallCard;
+}
 
 
 :root {
@@ -32,12 +38,21 @@ $boxShadowPic:0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
 
 
 .card-date {
-
     background-color: var(--background-card);
-    @include myPicture(
-        ($widthPic),
-        ($heightPic),
-        ($borderRadiusPic),
-        ($boxShadowPic)
+    @include card(
+        ($widthCard),
+        ($heightCard),
+        ($borderRadiusCard),
+        ($boxShadowCard)
+    );
+}
+
+.card-small {
+    background-color: var(--color-bis);
+    @include smallCard(
+        ($widthCard),
+        ($heightCard),
+        ($borderRadiusCard),
+
     );
 }
