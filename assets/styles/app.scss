@@ -1,4 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
+@import url(' https://fonts.googleapis.com/css2?family=Amiri&display=swap ');
+@import url(' https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap ');
 
 :root {
     --background-color: #f9f9f9;
@@ -25,11 +27,37 @@
 
 .camille img{
   border-radius: 50%;
+  margin-top: 1rem;
 }
 
 .btnRoutine{
   align-items: center;
   background-color: var(--background-card);
   color: var(--background-color);
+}
 
+.navbar {
+  background-color: var(--background-card);
+  border-radius: 1rem;
+  justify-content: space-evenly;
+  
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  justify-content: space-around;
+  color: var(--background-color);
+}
+
+.navbar a i {
+  justify-content: space-around;
+}
+
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
 }
