@@ -60,7 +60,7 @@ $boxShadowCard: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
 :root {
     --background-color: #f9f9f9;
     --link-hover: #ecb390;
-    --background-card: #94B49F;
+    --background-card: #CEE5D0;
     --color: black;
     --color-bis: #cee5d0;
     --color-grey: #d9d9d9;
@@ -145,7 +145,7 @@ body{
 .btnRoutine {
     align-items: center;
     background-color: var(--background-card);
-    color: var(--background-color);
+    color: var(--color);
 }
 .camille img{
   border-radius: 50%;
@@ -155,7 +155,7 @@ body{
 .btnRoutine {
   align-items: center;
   background-color: var(--background-card);
-  color: var(--background-color);
+  color: var(--color);
 }
 
 .navbar {
@@ -168,7 +168,7 @@ body{
   float: left;
   text-align: center;
   justify-content: space-around;
-  color: var(--background-color);
+  color: var(--color);
 }
 
 .navbar a i {
