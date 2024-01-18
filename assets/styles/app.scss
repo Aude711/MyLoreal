@@ -1,16 +1,24 @@
 @import "~bootstrap/scss/bootstrap";
 @import url(' https://fonts.googleapis.com/css2?family=Amiri&display=swap ');
 @import url(' https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap ');
+
 $widthCard: 20rem;
 $heightCard: 6.5rem;
+
 $widthSmallCard: 4rem;
 $heightSmallCard: 4rem;
+
 $widthBigCard: 20rem;
 $heightBigCard: 19rem;
+
 $widthPriceCard: 20rem;
 $heightPriceCard: 4rem;
+
 $widthSliderCard: 15rem;
 $heightSliderCard: 15rem;
+
+$widthCardButton: 15rem;
+$heightCardButton: 5rem;
 
 $borderRadiusCard: 1.25rem;
 $borderRadiusSmallCard: 0.55rem;
@@ -32,6 +40,11 @@ $boxShadowCard: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
     height: $y;
     border-radius: $borderRadiusCard;
 }
+@mixin buttonCard($x, $y, $borderRadiusCard) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusCard;
+}
 @mixin priceCard($x, $y, $borderRadiusCard) {
     width: $x;
     height: $y;
@@ -47,7 +60,7 @@ $boxShadowCard: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
 :root {
     --background-color: #f9f9f9;
     --link-hover: #ecb390;
-    --background-card: #adc7b6;
+    --background-card: #94B49F;
     --color: black;
     --color-bis: #cee5d0;
     --color-grey: #d9d9d9;
@@ -61,6 +74,10 @@ $boxShadowCard: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
     text-decoration: none;
     scroll-behavior: smooth;
 }
+
+body{
+        padding-bottom: 15%;
+    }
 
 .card-date {
     background-color: var(--background-card);
@@ -93,6 +110,15 @@ $boxShadowCard: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
     @include bigCard(
         ($widthPriceCard),
         ($heightPriceCard),
+        ($borderRadiusCard)
+    );
+}
+
+.card-button {
+    background-color: var(--background-card);
+    @include buttonCard(
+        ($widthCardButton),
+        ($heightCardButton),
         ($borderRadiusCard)
     );
 }
@@ -136,7 +162,7 @@ $boxShadowCard: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
   background-color: var(--background-card);
   border-radius: 1rem;
   justify-content: space-evenly;
-  
+  filter:blur(9.2px);
 }
 
 .navbar a {
@@ -149,7 +175,6 @@ $boxShadowCard: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
 .navbar a i {
   justify-content: space-around;
 }
-
 
 @media screen and (max-width: 500px) {
   .navbar a {
