@@ -1,7 +1,15 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% block content %}{% endblock %}
 
-<div class="navbar">
-  <a href="#"><i class="fa-regular fa-house"></i></a>
-  <a href="#"><i class="fa-regular fa-bag-shopping"></i></a>
-  <a href="#"><i class="fa-regular fa-heart"></i></a>
-</div>
+{% block footer %}
+	<div class="navbar d-flex mx-auto my-4 w-75 fixed-bottom">
+		<a href="#">
+			<i class="bi bi-house" style="font-size: 1.6rem;"></i>
+		</a>
+		<a href="#">
+			<i class="bi bi-bag" style="font-size: 1.6rem;"></i>
+		</a>
+		<a href="#">
+			<i class="bi bi-heart" style="font-size: 1.6rem;"></i>
+		</a>
+	</div>
+{% endblock %}

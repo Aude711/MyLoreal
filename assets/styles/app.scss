@@ -40,19 +40,23 @@
 }
 
 .navbar {
-  width: 85%;
   background-color: var(--background-card);
-  overflow: auto;
-  width: auto;
   border-radius: 1rem;
+  justify-content: space-evenly;
+  
 }
 
 .navbar a {
   float: left;
   text-align: center;
-  padding: 12px;
+  justify-content: space-around;
   color: var(--background-color);
 }
+
+.navbar a i {
+  justify-content: space-around;
+}
+
 
 @media screen and (max-width: 500px) {
   .navbar a {
