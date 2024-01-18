@@ -159,6 +159,7 @@ body{
   background-color: var(--background-card);
   border-radius: 1rem;
   justify-content: space-evenly;
+  backdrop-filter:blur(9.2px);
 }
 
 .navbar a {
