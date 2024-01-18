@@ -162,7 +162,6 @@ body{
   background-color: var(--background-card);
   border-radius: 1rem;
   justify-content: space-evenly;
-  filter:blur(9.2px);
 }
 
 .navbar a {
@@ -180,6 +179,38 @@ body{
   .navbar a {
     float: none;
     display: block;
+  }
+}
+
+.title-fav {
+  margin: 20px;
+  margin-bottom: 15%;
+}
+
+.text-pink {
+  color: #ff69b4; 
+}
+
+.card-fav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card-fav img { 
+  margin-top: 30px; 
+  border-radius: 20px; 
+  height: 200px;
+  width: 200px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15); 
+}
+
+@media (max-width: 767px) {
+  .card-fav img {
+    width: calc(38% - 16px);
+    margin: 10px;
+    height: 200px;
   }
 }
 
