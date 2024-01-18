@@ -95,7 +95,7 @@ $boxShadowCard: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
 }
 
 .card-slider {
-    background-color: var(--background-card);
+    background-color: var(--color-grey);
     @include bigCard(
         ($widthSliderCard),
         ($heightSliderCard),
