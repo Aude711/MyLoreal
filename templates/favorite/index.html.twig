@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes favoris !
+{% endblock %}
+
+{% block body %}
+
+	<div class="title-fav">
+		<h1>Mes favoris <i class="bi bi-heart text-pink"></i></h1>
+	</div>
+
+	<div class="card-fav">
+		<img src="{{ asset('build/images/loreal.png') }}"  alt="image du produit"> <i class="bi bi-x-lg text-danger"></i>
+		<img src="{{ asset('build/images/loreal2.png') }}" alt="image du produit"> <i class="bi bi-x-lg text-danger"></i>
+		<img src="{{ asset('build/images/loreal3.png') }}" alt="image du produit"> <i class="bi bi-x-lg text-danger"></i>
+		<img src="{{ asset('build/images/loreal4.png') }}" alt="image du produit"> <i class="bi bi-x-lg text-danger"></i>
+	</div>
+
+
+{% endblock %}
