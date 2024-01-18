@@ -140,15 +140,6 @@ body{
     height: 5rem;
 }
 
-.camille img {
-    border-radius: 50%;
-}
-
-.btnRoutine {
-    align-items: center;
-    background-color: var(--background-card);
-    color: var(--color);
-}
 .camille img{
   border-radius: 50%;
   margin-top: 1rem;
@@ -156,6 +147,10 @@ body{
 
 .btnRoutine {
   align-items: center;
+  justify-content: space-evenly;
+  border-radius: 1rem;
+  width: 10rem;
+  margin: auto;
   background-color: var(--background-card);
   color: var(--color);
 }
