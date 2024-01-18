@@ -15,4 +15,11 @@ class SubscribedRoutineController extends AbstractController
             'controller_name' => 'SubscribedRoutineController',
         ]);
     }
+
+    #[Route('/subscribed/routine/show', name: 'app_subscribed_routine_show')]
+    public function show(): Response
+    {
+        return $this->render('subscribed_routine/show.html.twig', [
+        ]);
+    }
 }
