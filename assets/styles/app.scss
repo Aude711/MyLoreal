@@ -8,8 +8,11 @@ $heightCard: 6.5rem;
 $widthSmallCard: 4rem;
 $heightSmallCard: 4rem;
 
+$widthMediumCard: 6rem;
+$heightMediumCard: 6rem;
+
 $widthBigCard: 20rem;
-$heightBigCard: 19rem;
+$heightBigCard: 25rem;
 
 $widthPriceCard: 20rem;
 $heightPriceCard: 4rem;
@@ -31,6 +34,11 @@ $boxShadowCard: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
     box-shadow: $boxShadowCard;
 }
 @mixin smallCard($x, $y, $borderRadiusSmallCard) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusSmallCard;
+}
+@mixin mediumCard($x, $y, $borderRadiusSmallCard) {
     width: $x;
     height: $y;
     border-radius: $borderRadiusSmallCard;
@@ -98,6 +106,16 @@ body{
     @include smallCard(
         ($widthSmallCard),
         ($heightSmallCard),
+        ($borderRadiusSmallCard)
+    );  
+}
+.card-medium {
+    font-size: x-large;
+    font-weight: bolder;
+    background-color: var(--color-grey);
+    @include mediumCard(
+        ($widthMediumCard),
+        ($heightMediumCard),
         ($borderRadiusSmallCard)
     );
 }
