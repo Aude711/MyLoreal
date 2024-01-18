@@ -5,19 +5,19 @@
 {% block body %}
 
 <h1 class="d-flex mx-4">Ma routine</h1>
-<div class="container card-date mb-5 my-3 text-center"> 
-    <p class="pt-2 m-0">Prochaine commande expédiée</p>
+<div class="container card-date mb-5 my-3 text-center">
+    <p class="pt-2 m-0">Prochaine routine expédiée</p>
     <h4 class="mb-3 fw-bold">Mercredi 17 février 2024</h4>
 <div class="d-flex align-items-start justify-content-center w-75 gap-2 mx-auto">
-    <i class="bi bi-lightning-charge d-flex flex-column mx-auto card-small align-items-center justify-content-center"></i>
-    <i class="bi bi-calendar-week d-flex flex-column card-small align-items-center justify-content-center"></i>
-    <i class="bi bi-trash3 d-flex flex-column mx-auto card-small align-items-center justify-content-center"></i>
+    <i class="bi bi-lightning-charge d-flex flex-column mx-auto card-small align-items-center justify-content-center border border-3 border-warning"></i>
+    <i class="bi bi-calendar-week d-flex flex-column card-small align-items-center justify-content-center border border-3 border-warning"></i>
+    <i class="bi bi-trash3 d-flex flex-column mx-auto card-small align-items-center justify-content-center border border-3 border-warning"></i>
 </div>
 </div>
 
 <div class="container card-big ">
     <h2 class="pt-2 m-0">Détails</h2>
-    <h5 class="mb-3">de la prochaine commande</h5>
+    <h5 class="mb-3">de la prochaine routine</h5>
 
     <div class="container ">
 
@@ -44,8 +44,8 @@
 
 </div>
 
-<div class="container card-price my-3"> 
-    <p class="pt-2 m-0">Prix de la commande</p>
+<div class="container card-price my-3">
+    <p class="pt-2 m-0">Valeur de votre routine</p>
     <h4 class="mb-3 fw-bold d-flex justify-content-end">125,00€</h4>
 </div>
 
@@ -55,7 +55,7 @@
 </div>
 
 <div class="d-flex flex-nowrap overflow-x-scroll mb-5">
-    
+
     <div class="d-flex flex-row mx-4 gap-2">
         <div class="position-relative">
             <img src="{{ asset('build/images/creme-soin.png') }}" class="card-slider object-fit-cover"/>
@@ -112,7 +112,7 @@
     </div>
 
 
-    
+
 </div>
 
 {% endblock %}
