@@ -1,12 +1,12 @@
 {% block body %}
-	<h1 class="text-center mt-4 fw-bolder">Mon profil</h1>
-    <div class="d-flex justify-content-center mx-auto">
-            <img src=" {{ asset('build/images/camille.png')}} " alt="">
-        </div>
+	<h1 class="text-center mt-4 fw-bolder pt-4">Mon profil</h1>
+    <div class="d-flex justify-content-center mx-auto camille-profile">
+    {% include "/base.html.twig" %}
+    </div>
     <p class="text-center analyse-peau"> Votre analyse de peau </p>
 	<div class="profile-container">
-		<div class="profile-card mx-5 pt-5">
-			<div class="row flex-nowrap row-cols-2">
+		<div class="profile-card mx-5 pt-4">
+			<div class="row flex-nowrap row-cols-2 mx-2">
             <div class="col question fw-bold ms-1">Type de peau:</div>
             <div class="col response fw-semibold">Séche</div>
         </div>
