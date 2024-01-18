@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes favoris !
+{% endblock %}
+
+{% block body %}
+
+	<div class="title-fav">
+		<h1>Mes favoris</h1>
+	</div>
+
+	 <div class="card-fav">
+    <div class="card-fav-item">
+      <img src="{{ asset('build/images/loreal.png') }}" alt="image du produit">
+      <div class="card-fav-text">
+        <p>Age perfect</p>
+      </div>
+    </div>
+
+    <div class="card-fav-item">
+      <img src="{{ asset('build/images/loreal2.png') }}" alt="image du produit">
+      <div class="card-fav-text">
+        <p>Sérum revitalift</p>
+      </div>
+    </div>
+
+    <div class="card-fav-item">
+      <img src="{{ asset('build/images/loreal3.png') }}" alt="image du produit">
+      <div class="card-fav-text">
+        <p>Crème revitalift</p>
+      </div>
+    </div>
+
+    <div class="card-fav-item">
+      <img src="{{ asset('build/images/loreal4.png') }}" alt="image du produit">
+      <div class="card-fav-text">
+        <p>Curl expression</p>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}

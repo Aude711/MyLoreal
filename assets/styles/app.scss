@@ -61,3 +61,31 @@
     display: block;
   }
 }
+
+.title-fav {
+  margin: 20px;
+  margin-bottom: 15%;
+}
+
+.card-fav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-fav img { 
+  margin: 20px; 
+  border-radius: 20px; 
+  height: 200px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15); 
+}
+
+@media (max-width: 767px) {
+  .card-fav img {
+    width: calc(35% - 16px);
+  }
+}
+
+.card-fav-text {
+  padding: 10px;
+}
