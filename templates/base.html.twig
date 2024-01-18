@@ -17,9 +17,9 @@
 			{{ encore_entry_script_tags('app') }}
 		{% endblock %}
 	</head>
+    {% block header %}{% include "/_headPhoto.html.twig" %}{% endblock %}
 	<body>
-		<header>{% include "/_headPhoto.html.twig" %}</header>
-
+	
 		{% block body %}{% endblock %}
 	</body>
 	{% block footer %}

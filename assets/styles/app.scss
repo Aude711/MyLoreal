@@ -1,5 +1,4 @@
 @import "~bootstrap/scss/bootstrap";
-@import url(" https://fonts.googleapis.com/css2?family=Amiri&display=swap ");
 @import url(" https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap ");
 
 $widthCard: 20rem;
@@ -67,12 +66,13 @@ $boxShadowCard: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
 :root {
     --background-color: #f9f9f9;
     --link-hover: #ecb390;
-    --background-card: #cee5d0;
+    --background-card: #131313;
     --color: black;
     --color-bis: #cee5d0;
-    --titre: " Amiri ";
-    --text: " Robot ";
+    --text: 'Roboto', sans-serif;
     --color-grey: #d9d9d9;
+    --text-color: #f5f5f5;
+    --navbar-color:
 }
 
 * {
@@ -178,16 +178,19 @@ body {
 }
 
 .navbar {
-    background-color: var(--background-card);
+    background-color: var(--background-color);
     border-radius: 1rem;
     justify-content: space-evenly;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
 }
 
 .navbar a {
     float: left;
     text-align: center;
     justify-content: space-around;
-    color: var(--color);
+    color: var(--background-card);
+   
 }
 
 .navbar a i {
@@ -214,21 +217,20 @@ body {
     background-color: var(--background-card);
     border-radius: 18px;
     color: var(--color);
-    height: 20rem;
+    height: 13rem;
 }
 
 .profile-card .question {
-    font-family: var(--titre);
-    font-size: 24px;
+    font-family: var(--text);
+    color: var(--text-color);
 }
 
 .profile-card .response {
     font-family: var(--text);
-    font-size: 20px;
+    color: var(--text-color);
 }
 
 h1 {
-    font-family: var(--titre);
     font-size: 32px;
 }
 
