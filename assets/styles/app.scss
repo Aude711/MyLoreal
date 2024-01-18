@@ -8,7 +8,9 @@
     --background-card: #94B49F;
     --color: black;
     --color-bis: #CEE5D0;
-}
+    --titre: ' Amiri ';
+    --text: ' Robot ';
+  }
 
 * {
     padding: 0;
@@ -60,4 +62,41 @@
     float: none;
     display: block;
   }
+}
+
+.camille-profile {
+  display: flex;
+  justify-content: flex-end;
+  height: 5rem;
+  max-width: 100%;
+	height: auto;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+.profile-card {
+    background-color: var(--background-card);
+    border-radius: 18px;
+    color: var(--background-color);
+    height: 20rem;
+}
+
+.profile-card .question {
+    font-family: var(--titre);
+    font-size: 24px;
+}
+
+.profile-card .response {
+    font-family: var(--text);
+    font-size: 20px;
+}
+
+h1 {
+  font-family: var(--titre);
+  font-size: 32px;
+}
+
+.analyse-peau {
+  font-size: 20px;
+  margin-top: 3em;
+  margin-bottom: 6em;
 }

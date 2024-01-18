@@ -1,15 +1,23 @@
 {% block body %}
-	<h1 class="text-center fs-1 mt-4">Mon profil</h1>
-    {% include 'base.html.twig' %}
-	<div class="user-container">
-		<div class="container-card-button">
-			<div class="user-card">
-				<p>Type de peau: Séche</p>
-				<p>Allérgie: Eczéma</p>
-				<p>Problèmes réccurents: Rougeur
-                Teint terne</p> 
-				
-			</div>
+	<h1 class="text-center mt-4 fw-bolder">Mon profil</h1>
+    <div class="d-flex justify-content-center mx-auto">
+            <img src=" {{ asset('build/images/camille.png')}} " alt="">
+        </div>
+    <p class="text-center analyse-peau"> Votre analyse de peau </p>
+	<div class="profile-container">
+		<div class="profile-card mx-5 pt-5">
+			<div class="row flex-nowrap row-cols-2">
+            <div class="col question fw-bold ms-1">Type de peau:</div>
+            <div class="col response fw-semibold">Séche</div>
+        </div>
+        <div class="row mx-2 my-4">
+            <div class="col question fw-bold">Allérgie:</div>
+            <div class="col response fw-semibold">Eczéma</div>
+        </div>
+        <div class="row mx-2 ">
+            <div class="col question fw-bold">Problèmes récurrents:</div>
+            <div class="col response fw-semibold ">Rougeur </br>Teint terne</div>
+        </div>
 		</div>
 	</div>
 {% endblock %}
