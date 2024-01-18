@@ -3,42 +3,42 @@
 @import url(' https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap ');
 
 :root {
-    --background-color: #f9f9f9;
-    --link-hover: #ECB390;
-    --background-card: #94B49F;
-    --color: black;
-    --color-bis: #CEE5D0;
+  --background-color: #f9f9f9;
+  --link-hover: #ECB390;
+  --background-card: #94B49F;
+  --color: black;
+  --color-bis: #CEE5D0;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    box-sizing: border-box;
-    text-decoration: none;
-    scroll-behavior: smooth;
-  }
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
 
-  body {
-    background-color: var(--background-color);
-  }
+body {
+  background-color: var(--background-color);
+}
 
-  h1 {
-    margin: 0;
-  }
+h1 {
+  margin: 0;
+}
 
-.camille{
+.camille {
   display: flex;
   justify-content: flex-end;
   height: 5rem;
 }
 
-.camille img{
+.camille img {
   border-radius: 50%;
   margin-top: 1rem;
 }
 
-.btnRoutine{
+.btnRoutine {
   align-items: center;
   background-color: var(--background-card);
   color: var(--background-color);
@@ -48,7 +48,7 @@
   background-color: var(--background-card);
   border-radius: 1rem;
   justify-content: space-evenly;
-  
+
 }
 
 .navbar a {
