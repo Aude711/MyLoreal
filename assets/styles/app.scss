@@ -3,13 +3,11 @@
 @import url(' https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap ');
 
 :root {
-  --background-color: #f9f9f9;
-  --link-hover: #ECB390;
-  --background-card: #94B49F;
-  --color: black;
-  --color-bis: #CEE5D0;
-  --titre: ' Amiri ';
-  --text: ' Robot ';
+    --background-color: #f9f9f9;
+    --link-hover: #ECB390;
+    --background-card: #94B49F;
+    --color: black;
+    --color-bis: #CEE5D0;
 }
 
 * {
@@ -19,8 +17,6 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    background-color: var(--background-color);
-    color: var(--color);
   }
 
   body {
@@ -39,14 +35,39 @@
 
 .camille img{
   border-radius: 50%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  box-sizing: border-box;
-  text-decoration: none;
-  scroll-behavior: smooth;
-  background-color: var(--background-color);
-  color: var(--color);
+  margin-top: 1rem;
+}
+
+.btnRoutine{
+  align-items: center;
+  background-color: var(--background-card);
+  color: var(--background-color);
+}
+
+.navbar {
+  background-color: var(--background-card);
+  border-radius: 1rem;
+  justify-content: space-evenly;
+  
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  justify-content: space-around;
+  color: var(--background-color);
+}
+
+.navbar a i {
+  justify-content: space-around;
+}
+
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
 }
 
 section.calendar-row {
