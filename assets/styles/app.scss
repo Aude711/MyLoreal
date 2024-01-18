@@ -62,7 +62,9 @@ $boxShadowCard: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
     --link-hover: #ecb390;
     --background-card: #CEE5D0;
     --color: black;
-    --color-bis: #cee5d0;
+    --color-bis: #CEE5D0;
+    --titre: ' Amiri ';
+    --text: ' Robot ';
     --color-grey: #d9d9d9;
 }
 
@@ -182,6 +184,42 @@ body{
   }
 }
 
+.camille-profile {
+  display: flex;
+  justify-content: flex-end;
+  height: 5rem;
+  max-width: 100%;
+	height: auto;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+.profile-card {
+    background-color: var(--background-card);
+    border-radius: 18px;
+    color: var(--color);
+    height: 20rem;
+}
+
+.profile-card .question {
+    font-family: var(--titre);
+    font-size: 24px;
+}
+
+.profile-card .response {
+    font-family: var(--text);
+    font-size: 20px;
+}
+
+h1 {
+  font-family: var(--titre);
+  font-size: 32px;
+}
+
+.analyse-peau {
+  font-size: 20px;
+  margin-top: 3em;
+  margin-bottom: 6em;
+}
 .title-fav {
   margin: 20px;
   margin-bottom: 15%;
