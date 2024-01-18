@@ -1,21 +1,24 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Home
+{% endblock %}
 
 {% block body %}
-    <h1>Bonjour Camille</h1>
-    <h6>Prenez soin de votre corps</h6>
+	<h1>Bonjour Camille</h1>
+	<h6>Prenez soin de votre corps</h6>
 
-<button type="button" href="#" class=" btn d-flex mx-auto my-4 btnRoutine" >Daily routine</button>
-<h6><strong>Pour vous</strong></h6>
-<div class="d-flex flex-row overflow-x-scroll my-5">
+	<a type="button" href="/daily" class=" btn d-flex my-4 btnRoutine">Daily routine</a>
+	<h6>
+		<strong>Pour vous</strong>
+	</h6>
+	<div class="d-flex flex-row overflow-x-scroll my-5">
 
-<div class="d-flex flex-row mx-4 gap-5 slide">
-        <div class="slide-image"><image src="{{ asset('build/images/biocremer.png')}}"></div>
-        <div class="slide-image"><image src="{{ asset('build/images/creme2.png')}}"></div>
-        <div class="slide-image"><image src="{{ asset('build/images/shampoo-removebg-preview.png')}}"></div>
-        <div class="slide-image"><image src="{{ asset('build/images/loreal2.png')}}"></div>
-    </div>   
-</div>
-    
+		<div class="d-flex flex-row mx-4 gap-5 slide">
+			<div class="slide-image"><image src="{{ asset('build/images/biocremer.png')}}"></div>
+			<div class="slide-image"><image src="{{ asset('build/images/creme2.png')}}"></div>
+			<div class="slide-image"><image src="{{ asset('build/images/shampoo-removebg-preview.png')}}"></div>
+			<div class="slide-image"><image src="{{ asset('build/images/loreal2.png')}}"></div>
+		</div>
+	</div>
+
 {% endblock %}
