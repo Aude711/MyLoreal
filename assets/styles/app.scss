@@ -2,38 +2,152 @@
 @import url(' https://fonts.googleapis.com/css2?family=Amiri&display=swap ');
 @import url(' https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap ');
 
+$widthCard: 20rem;
+$heightCard: 6.5rem;
+
+$widthSmallCard: 4rem;
+$heightSmallCard: 4rem;
+
+$widthBigCard: 20rem;
+$heightBigCard: 19rem;
+
+$widthPriceCard: 20rem;
+$heightPriceCard: 4rem;
+
+$widthSliderCard: 15rem;
+$heightSliderCard: 15rem;
+
+$widthCardButton: 15rem;
+$heightCardButton: 5rem;
+
+$borderRadiusCard: 1.25rem;
+$borderRadiusSmallCard: 0.55rem;
+$boxShadowCard: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
+
+@mixin card($x, $y, $borderRadiusCard, $boxShadowCard) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusCard;
+    box-shadow: $boxShadowCard;
+}
+@mixin smallCard($x, $y, $borderRadiusSmallCard) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusSmallCard;
+}
+@mixin bigCard($x, $y, $borderRadiusCard) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusCard;
+}
+@mixin buttonCard($x, $y, $borderRadiusCard) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusCard;
+}
+@mixin priceCard($x, $y, $borderRadiusCard) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusCard;
+}
+@mixin sliderCard($x, $y, $borderRadiusCard) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusCard;
+}
+
+
 :root {
-  --background-color: #f9f9f9;
-  --link-hover: #ECB390;
-  --background-card: #94B49F;
-  --color: black;
-  --color-bis: #CEE5D0;
+    --background-color: #f9f9f9;
+    --link-hover: #ecb390;
+    --background-card: #94B49F;
+    --color: black;
+    --color-bis: #cee5d0;
+    --color-grey: #d9d9d9;
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  box-sizing: border-box;
-  text-decoration: none;
-  scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
 }
 
-body {
-  background-color: var(--background-color);
+body{
+        padding-bottom: 15%;
+    }
+
+.card-date {
+    background-color: var(--background-card);
+    @include card(
+        ($widthCard),
+        ($heightCard),
+        ($borderRadiusCard),
+        ($boxShadowCard)
+    );
 }
 
-h1 {
-  margin: 0;
+.card-small {
+    font-size: x-large;
+    font-weight: bolder;
+    background-color: var(--color-grey);
+    @include smallCard(
+        ($widthSmallCard),
+        ($heightSmallCard),
+        ($borderRadiusSmallCard)
+    );
+}
+
+.card-big {
+    background-color: var(--background-card);
+    @include bigCard(($widthBigCard), ($heightBigCard), ($borderRadiusCard));
+}
+
+.card-price {
+    background-color: var(--background-card);
+    @include bigCard(
+        ($widthPriceCard),
+        ($heightPriceCard),
+        ($borderRadiusCard)
+    );
+}
+
+.card-button {
+    background-color: var(--background-card);
+    @include buttonCard(
+        ($widthCardButton),
+        ($heightCardButton),
+        ($borderRadiusCard)
+    );
+}
+
+.card-slider {
+    background-color: var(--color-grey);
+    @include bigCard(
+        ($widthSliderCard),
+        ($heightSliderCard),
+        ($borderRadiusCard)
+    );
 }
 
 .camille {
-  display: flex;
-  justify-content: flex-end;
-  height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    height: 5rem;
 }
 
 .camille img {
+    border-radius: 50%;
+}
+
+.btnRoutine {
+    align-items: center;
+    background-color: var(--background-card);
+    color: var(--background-color);
+}
+.camille img{
   border-radius: 50%;
   margin-top: 1rem;
 }
@@ -48,7 +162,7 @@ h1 {
   background-color: var(--background-card);
   border-radius: 1rem;
   justify-content: space-evenly;
-
+  filter:blur(9.2px);
 }
 
 .navbar a {
@@ -61,7 +175,6 @@ h1 {
 .navbar a i {
   justify-content: space-around;
 }
-
 
 @media screen and (max-width: 500px) {
   .navbar a {
