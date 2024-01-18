@@ -3,14 +3,59 @@
 {% block title %}Hello Camille{% endblock %}
 
 {% block body %}
-<div class="container card-date py-5 my-5 text-center"> 
-<p>Prochaine commande expédiée</p>
-<h4>Mecredi 17 février 2023</h4>
-<div><i class="bi bi-lightning-charge">Expédier maintenant</i>
-<i class="bi bi-calendar-week">Changer la date</i>
-<i class="bi bi-trash3">Supprimer</i>
+<div class="container card-date my-5 text-center"> 
+<p class="pt-2 m-0">Prochaine commande expédiée</p>
+<h4 class="mb-3 fw-bold">Mercredi 17 février 2023</h4>
+<div class="d-flex align-items-start justify-content-center w-75 gap-2 mx-auto">
+<i class="bi bi-lightning-charge d-flex flex-column mx-auto card-small align-items-center justify-content-center"></i>
+<i class="bi bi-calendar-week d-flex flex-column card-small align-items-center justify-content-center"></i>
+<i class="bi bi-trash3 d-flex flex-column mx-auto card-small align-items-center justify-content-center"></i>
+</div>
 </div>
 
+<div class="container card-big ">
+    <h1 class="pt-2 m-0">Détails  </h1>
+    <h5>de la prochaine commande</h5>
 
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex mx-auto card-small align-items-center justify-content-center mb-2 gap-2">
+            </div>
+            <div class="col fw-bold">
+                <p>Objet 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex mx-auto card-small align-items-center justify-content-center mb-2 gap-2">
+            </div>
+            <div class="col fw-bold">
+                <p>Objet 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex mx-auto card-small align-items-center justify-content-center mb-2 gap-2">
+            </div>
+            <div class="col fw-bold">
+                <p>Objet 3</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container card-price my-2"> 
+    <p class="pt-2 m-0">Prix de la commande</p>
+    <h4 class="mb-3 fw-bold d-flex justify-content-end">125,00€</h4>
+</div>
+
+<div class="d-flex flex-nowrap overflow-x-auto">
+    <div class="card-slider "></div>
+    <div class="card-slider "></div>
+    <div class="card-slider "></div>
+    <div class="card-slider "></div>
+    <div class="card-slider "></div>
+    <div class="card-slider "></div>
+    <div class="card-slider "></div>
+    <div class="card-slider "></div>
+ 
 </div>
 {% endblock %}
