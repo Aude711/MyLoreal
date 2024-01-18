@@ -17,31 +17,31 @@
 
 <div class="container card-big ">
     <h2 class="pt-2 m-0">Détails</h2>
-    <h5>de la prochaine commande</h5>
+    <h5 class="mb-3">de la prochaine commande</h5>
 
-    <div class="container">
-        <div class="row">
-            <div class="col d-flex mx-auto card-small align-items-center justify-content-center mb-2 gap-2">
-            </div>
+    <div class="container ">
+
+        <div class="row row-cols-2">
+            <div><img src="{{ asset('build/images/creme-1.png') }}" class="card-medium object-fit-cover mb-2"/></div>
             <div class="col fw-bold">
-                <p>Objet 1</p>
+                <p>Crême hydratante</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col d-flex mx-auto card-small align-items-center justify-content-center mb-2 gap-2">
-            </div>
+        <div class="row row-cols-2">
+            <div><img src="{{ asset('build/images/mascara.png') }}" class="card-medium object-fit-cover mb-2"/></div>
             <div class="col fw-bold">
-                <p>Objet 2</p>
+                <p>Mascara waterproof</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col d-flex mx-auto card-small align-items-center justify-content-center mb-2 gap-2">
-            </div>
+        <div class="row row-cols-2">
+            <div><img src="{{ asset('build/images/creme-nettoyante.png') }}" class="card-medium object-fit-cover mb-2"/></div>
             <div class="col fw-bold">
-                <p>Objet 3</p>
+                <p>Crême nettoyante</p>
             </div>
         </div>
+
     </div>
+
 </div>
 
 <div class="container card-price my-3"> 
@@ -55,59 +55,64 @@
 </div>
 
 <div class="d-flex flex-nowrap overflow-x-scroll mb-5">
+    
     <div class="d-flex flex-row mx-4 gap-2">
-        <div class="d-flex card-slider align-items-end">
-            <div class="d-flex card-button align-items-center justify-content-center fw-medium fs-2">
+        <div class="position-relative">
+            <img src="{{ asset('build/images/creme-soin.png') }}" class="card-slider object-fit-cover"/>
+            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-2">
                 <a href="#" role="button" class="d-flex link-underline link-underline-opacity-0 link-light">
                     <i class="bi bi-plus-circle">Ajouter</i>
                 </a>
             </div>
-        </div>
-    <div class="d-flex flex-row gap-2">
-        <div class="d-flex card-slider align-items-end">
-            <div class="d-flex card-button align-items-center justify-content-center fw-medium fs-2">
-                <a href="#" role="button" class="d-flex link-underline link-underline-opacity-0 link-light">
-                    <i class="bi bi-plus-circle">Ajouter</i>
-                </a>
-            </div>
-        </div>
     </div>
     <div class="d-flex flex-row gap-2">
-        <div class="d-flex card-slider align-items-end">
-            <div class="d-flex card-button align-items-center justify-content-center fw-medium fs-2">
+        <div class="position-relative">
+            <img src="{{ asset('build/images/creme-baume.png') }}" class="card-slider object-fit-cover"/>
+            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-2">
                 <a href="#" role="button" class="d-flex link-underline link-underline-opacity-0 link-light">
                     <i class="bi bi-plus-circle">Ajouter</i>
                 </a>
             </div>
-        </div>
     </div>
     <div class="d-flex flex-row gap-2">
-        <div class="d-flex card-slider align-items-end">
-            <div class="d-flex card-button align-items-center justify-content-center fw-medium fs-2">
+        <div class="position-relative">
+            <img src="{{ asset('build/images/fond-teint.png') }}" class="card-slider object-fit-cover"/>
+            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-2">
                 <a href="#" role="button" class="d-flex link-underline link-underline-opacity-0 link-light">
                     <i class="bi bi-plus-circle">Ajouter</i>
                 </a>
             </div>
-        </div>
     </div>
     <div class="d-flex flex-row gap-2">
-        <div class="d-flex card-slider align-items-end">
-            <div class="d-flex card-button align-items-center justify-content-center fw-medium fs-2">
+        <div class="position-relative">
+            <img src="{{ asset('build/images/fondation.png') }}" class="card-slider object-fit-cover"/>
+            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-2">
                 <a href="#" role="button" class="d-flex link-underline link-underline-opacity-0 link-light">
                     <i class="bi bi-plus-circle">Ajouter</i>
                 </a>
             </div>
-        </div>
     </div>
     <div class="d-flex flex-row gap-2">
-        <div class="d-flex card-slider align-items-end">
-            <div class="d-flex card-button align-items-center justify-content-center fw-medium fs-2">
+        <div class="position-relative">
+            <img src="{{ asset('build/images/matifiant.png') }}" class="card-slider object-fit-cover"/>
+            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-2">
                 <a href="#" role="button" class="d-flex link-underline link-underline-opacity-0 link-light">
                     <i class="bi bi-plus-circle">Ajouter</i>
                 </a>
             </div>
-        </div>
     </div>
+    <div class="d-flex flex-row gap-2">
+        <div class="position-relative">
+            <img src="{{ asset('build/images/creme-soin.png') }}" class="card-slider object-fit-cover"/>
+            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-2">
+                <a href="#" role="button" class="d-flex link-underline link-underline-opacity-0 link-light">
+                    <i class="bi bi-plus-circle">Ajouter</i>
+                </a>
+            </div>
+    </div>
+
+
+    
 </div>
 
 {% endblock %}
