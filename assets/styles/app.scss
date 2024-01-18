@@ -23,6 +23,14 @@
     color: var(--color);
   }
 
+  body {
+    background-color: var(--background-color);
+  }
+
+  h1 {
+    margin: 0;
+  }
+
 .camille{
   display: flex;
   justify-content: flex-end;
@@ -39,4 +47,39 @@
   scroll-behavior: smooth;
   background-color: var(--background-color);
   color: var(--color);
+}
+
+section.calendar-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+div.calendar {
+  width: 2.875rem;
+  height: 5.875rem;
+  border: auto;
+  padding-left: 0.2rem;
+  padding-top: 0.5rem;
+  padding-right: 0.2rem;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 2.5rem;
+  background: #CEE5D0;
+}
+
+div.calendar-big {
+  width: 2.875rem;
+  height: 7.75rem;
+  border: auto;
+  padding-left: 0.2rem;
+  padding-top: 1.5rem;
+  padding-right: 0.2rem;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 2.5rem;
+  background: #CEE5D0;
+  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.2);
+  
 }
