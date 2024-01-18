@@ -2,12 +2,68 @@
 @import url(' https://fonts.googleapis.com/css2?family=Amiri&display=swap ');
 @import url(' https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap ');
 
+$widthCard: 20rem;
+$heightCard: 6.5rem;
+
+$widthSmallCard: 4rem;
+$heightSmallCard: 4rem;
+
+$widthBigCard: 20rem;
+$heightBigCard: 19rem;
+
+$widthPriceCard: 20rem;
+$heightPriceCard: 4rem;
+
+$widthSliderCard: 15rem;
+$heightSliderCard: 15rem;
+
+$widthCardButton: 15rem;
+$heightCardButton: 5rem;
+
+$borderRadiusCard: 1.25rem;
+$borderRadiusSmallCard: 0.55rem;
+$boxShadowCard: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
+
+@mixin card($x, $y, $borderRadiusCard, $boxShadowCard) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusCard;
+    box-shadow: $boxShadowCard;
+}
+@mixin smallCard($x, $y, $borderRadiusSmallCard) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusSmallCard;
+}
+@mixin bigCard($x, $y, $borderRadiusCard) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusCard;
+}
+@mixin buttonCard($x, $y, $borderRadiusCard) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusCard;
+}
+@mixin priceCard($x, $y, $borderRadiusCard) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusCard;
+}
+@mixin sliderCard($x, $y, $borderRadiusCard) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusCard;
+}
+
+
 :root {
     --background-color: #f9f9f9;
-    --link-hover: #ECB390;
+    --link-hover: #ecb390;
     --background-card: #94B49F;
     --color: black;
-    --color-bis: #CEE5D0;
+    --color-bis: #cee5d0;
+    --color-grey: #d9d9d9;
 }
 
 * {
@@ -17,20 +73,86 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-  }
-
-.camille{
-  display: flex;
-  justify-content: flex-end;
-  height: 5rem;
 }
 
+body{
+        padding-bottom: 15%;
+    }
+
+.card-date {
+    background-color: var(--background-card);
+    @include card(
+        ($widthCard),
+        ($heightCard),
+        ($borderRadiusCard),
+        ($boxShadowCard)
+    );
+}
+
+.card-small {
+    font-size: x-large;
+    font-weight: bolder;
+    background-color: var(--color-grey);
+    @include smallCard(
+        ($widthSmallCard),
+        ($heightSmallCard),
+        ($borderRadiusSmallCard)
+    );
+}
+
+.card-big {
+    background-color: var(--background-card);
+    @include bigCard(($widthBigCard), ($heightBigCard), ($borderRadiusCard));
+}
+
+.card-price {
+    background-color: var(--background-card);
+    @include bigCard(
+        ($widthPriceCard),
+        ($heightPriceCard),
+        ($borderRadiusCard)
+    );
+}
+
+.card-button {
+    background-color: var(--background-card);
+    @include buttonCard(
+        ($widthCardButton),
+        ($heightCardButton),
+        ($borderRadiusCard)
+    );
+}
+
+.card-slider {
+    background-color: var(--color-grey);
+    @include bigCard(
+        ($widthSliderCard),
+        ($heightSliderCard),
+        ($borderRadiusCard)
+    );
+}
+
+.camille {
+    display: flex;
+    justify-content: flex-end;
+    height: 5rem;
+}
+
+.camille img {
+    border-radius: 50%;
+}
+
+.btnRoutine {
+    align-items: center;
+    background-color: var(--background-card);
+    color: var(--background-color);
+}
 .camille img{
   border-radius: 50%;
   margin-top: 1rem;
 }
 
-.btnRoutine{
+.btnRoutine {
   align-items: center;
   background-color: var(--background-card);
   color: var(--background-color);
@@ -40,7 +162,7 @@
   background-color: var(--background-card);
   border-radius: 1rem;
   justify-content: space-evenly;
-  
+  filter:blur(9.2px);
 }
 
 .navbar a {
@@ -54,7 +176,6 @@
   justify-content: space-around;
 }
 
-
 @media screen and (max-width: 500px) {
   .navbar a {
     float: none;
@@ -62,30 +183,53 @@
   }
 }
 
-.title-fav {
-  margin: 20px;
-  margin-bottom: 15%;
-}
-
-.card-fav {
+section.calendar-row {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-around;
+
 }
 
-.card-fav img { 
-  margin: 20px; 
-  border-radius: 20px; 
-  height: 200px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15); 
+div.calendar {
+  width: 2.875rem;
+  height: 5.875rem;
+  border: auto;
+  padding-left: 0.2rem;
+  padding-top: 0.5rem;
+  padding-right: 0.2rem;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 2.5rem;
+  background: #CEE5D0;
 }
 
-@media (max-width: 767px) {
-  .card-fav img {
-    width: calc(35% - 16px);
-  }
+div.calendar-big {
+  width: 2.875rem;
+  height: 7.75rem;
+  border: auto;
+  padding-left: 0.2rem;
+  padding-top: 1.5rem;
+  padding-right: 0.2rem;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 2.5rem;
+  background: #CEE5D0;
+  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.card-fav-text {
-  padding: 10px;
+section.daily {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+div.img {
+  width: 8.0625rem;
+  height: 10.5rem;
+  flex-shrink: 0;
+  border-radius: 1.6875rem;
+  background: #D9D9D9;
+  box-shadow: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
+  margin-bottom: 4rem;
 }
