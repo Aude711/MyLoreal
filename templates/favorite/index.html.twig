@@ -6,23 +6,34 @@
 {% block body %}
 
 	<div class="title-fav">
-		<h1>Mes favoris <i class="bi bi-heart text-pink"></i></h1>
+		<h1><i class="bi bi-bookmark-heart-fill"></i> Mes favoris </h1>
 	</div>
 
-	<div class="card-fav">
-		<img src="{{ asset('build/images/loreal.png') }}"  alt="image du produit"> <i class="bi bi-x-lg text-danger"></i>
-		<img src="{{ asset('build/images/loreal2.png') }}" alt="image du produit"> <i class="bi bi-x-lg text-danger"></i>
-		<img src="{{ asset('build/images/loreal3.png') }}" alt="image du produit"> <i class="bi bi-x-lg text-danger"></i>
-		<img src="{{ asset('build/images/loreal4.png') }}" alt="image du produit"> <i class="bi bi-x-lg text-danger"></i>
-		<img src="{{ asset('build/images/creme-main.png') }}" alt="image du produit"> <i class="bi bi-x-lg text-danger"></i>
-		<img src="{{ asset('build/images/creme-nettoyante.png') }}" alt="image du produit"> <i class="bi bi-x-lg text-danger"></i>
-		<img src="{{ asset('build/images/creme-soin.png') }}" alt="image du produit"> <i class="bi bi-x-lg text-danger"></i>
-		<img src="{{ asset('build/images/fond-teint.png') }}" alt="image du produit"> <i class="bi bi-x-lg text-danger"></i>
-		<img src="{{ asset('build/images/mascara.png') }}" alt="image du produit"> <i class="bi bi-x-lg text-danger"></i>
-		<img src="{{ asset('build/images/matifiant.png') }}" alt="image du produit"> <i class="bi bi-x-lg text-danger"></i>
-		<img src="{{ asset('build/images/creme2.png') }}" alt="image du produit"> <i class="bi bi-x-lg text-danger"></i>
-		<img src="{{ asset('build/images/fondation.png') }}" alt="image du produit"> <i class="bi bi-x-lg text-danger"></i>
-	</div>
+<div class="w-100 ms-4 mx-auto mb-5">
+	<h1><strong>Camille,</strong></h1>
+	<h6>Retrouvez vos produits favoris</h6>
+</div>
 
+	<div class="d-flex ms-4 gap-3 flex-wrap">
+		<img src="{{ asset('build/images/loreal.png') }}"  class="slide-image" alt="image du produit"></i>
+		<img src="{{ asset('build/images/loreal2.png') }}" class="slide-image" alt="image du produit"></i>
+		<img src="{{ asset('build/images/creme-main.png') }}" class="slide-image" alt="image du produit"></i>
+		<img src="{{ asset('build/images/creme-nettoyante.png') }}" class="slide-image" alt="image du produit"></i>
+		<img src="{{ asset('build/images/creme-soin.png') }}" class="slide-image" alt="image du produit"></i>
+		<img src="{{ asset('build/images/fond-teint.png') }}" class="slide-image" alt="image du produit"></i>
+		<img src="{{ asset('build/images/mascara.png') }}" class="slide-image" alt="image du produit"></i>
+		<img src="{{ asset('build/images/matifiant.png') }}" class="slide-image" alt="image du produit"></i>
+</div>
+<div class="d-flex justify-content-center">
+<nav aria-label="...">
+  <ul class="pagination pagination-sm">
+    <li class="page-item active" aria-current="page">
+      <span class="page-link">1</span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+  </ul>
+</nav>
+</div>
 
 {% endblock %}
