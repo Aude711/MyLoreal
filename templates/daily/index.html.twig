@@ -4,28 +4,102 @@
 {% endblock %}
 
 {% block body %}
-	<section class="calendar-row">
-		<div class="calendar">Lund 15 Janv</div>
-		<div class="calendar">Mar 16 Janv</div>
-		<div class="calendar">Merc 17 Janv</div>
-		<div class="calendar">Jeu 18 Janv</div>
-		<div class="calendar-big">Vend 19 Janv</div>
-		<div class="calendar">Sam 20 Janv</div>
-		<div class="calendar">Dim 21 Janv</div>
+	<section class="calendar-row w-75 gap-3 mx-auto">
+		<div class="calendar">Lund
+			<strong>15</strong>
+			Janv</div>
+		<div class="calendar">Mar
+			<strong>16</strong>
+			Janv</div>
+		<div class="calendar">Merc
+			<strong>17</strong>
+			Janv</div>
+		<div class="calendar">Jeu
+			<strong>18</strong>
+			Janv</div>
+		<div class="calendar-big">Vend
+			<strong>19</strong>
+			Janv</div>
+		<div class="calendar">Sam
+			<strong>20</strong>
+			Janv</div>
+		<div class="calendar">Dim
+			<strong>21</strong>
+			Janv</div>
 	</section>
 
-	<div class="card-fav">
-		<img src="{{ asset('build/images/loreal.png') }}"  alt="image du produit">
-		<img src="{{ asset('build/images/loreal2.png') }}" alt="image du produit">
-		<img src="{{ asset('build/images/loreal3.png') }}" alt="image du produit">
-		<img src="{{ asset('build/images/loreal4.png') }}" alt="image du produit">
-		<img src="{{ asset('build/images/creme-main.png') }}" alt="image du produit">
-		<img src="{{ asset('build/images/creme-nettoyante.png') }}" alt="image du produit">
-		<img src="{{ asset('build/images/creme-soin.png') }}" alt="image du produit">
-		<img src="{{ asset('build/images/fond-teint.png') }}" alt="image du produit">
-		<img src="{{ asset('build/images/mascara.png') }}" alt="image du produit">
-		<img src="{{ asset('build/images/matifiant.png') }}" alt="image du produit">
-		<img src="{{ asset('build/images/creme2.png') }}" alt="image du produit">
-		<img src="{{ asset('build/images/fondation.png') }}" alt="image du produit">
+	<div class="w-100 ms-3 mx-auto mt-5 mb-5">
+	<h1>Bonjour, <strong>Camille</strong></h1>
+	<h6>Voici votre routine du jour</h6>
+</div>
+
+	<div class="my-3">
+		<strong class="ms-3 mx-auto">
+			<i class="bi bi-1-square-fill"></i>
+			Etape 1</strong>
+		<p class="ms-3 mx-auto">Commencez par</p>
+		<div class="card-fav">
+			<img src="{{ asset('build/images/loreal.png') }}" alt="image du produit">
+			<img src="{{ asset('build/images/loreal2.png') }}" alt="image du produit">
+		</div>
+	</div>
+
+	<div class="my-3">
+		<strong class="ms-3 mx-auto">
+			<i class="bi bi-2-square-fill"></i>
+			Etape 2
+		</strong>
+		<p class="ms-3 mx-auto">Continuez par</p>
+		<div class="card-fav">
+			<img src="{{ asset('build/images/loreal3.png') }}" alt="image du produit">
+			<img src="{{ asset('build/images/loreal4.png') }}" alt="image du produit">
+		</div>
+	</div>
+
+	<div class="my-3">
+		<strong class="ms-3 mx-auto">
+			<i class="bi bi-3-square-fill"></i>
+			Etape 3
+		</strong>
+		<p class="ms-3 mx-auto">Continuez par</p>
+		<div class="card-fav">
+			<img src="{{ asset('build/images/creme-main.png') }}" alt="image du produit">
+			<img src="{{ asset('build/images/creme-nettoyante.png') }}" alt="image du produit">
+		</div>
+	</div>
+
+	<div class="my-3">
+		<strong class="ms-3 mx-auto">
+			<i class="bi bi-4-square-fill"></i>
+			Etape 4
+		</strong>
+		<p class="ms-3 mx-auto">Continuez par</p>
+		<div class="card-fav">
+			<img src="{{ asset('build/images/creme-soin.png') }}" alt="image du produit">
+			<img src="{{ asset('build/images/fond-teint.png') }}" alt="image du produit">
+		</div>
+	</div>
+
+	<div class="my-3">
+		<strong class="ms-3 mx-auto">
+			<i class="bi bi-5-square-fill"></i>
+			Etape 5</strong>
+		<p class="ms-3 mx-auto">Continuez par</p>
+		<div class="card-fav">
+			<img src="{{ asset('build/images/mascara.png') }}" alt="image du produit">
+			<img src="{{ asset('build/images/matifiant.png') }}" alt="image du produit">
+		</div>
+	</div>
+
+	<div class="my-3">
+		<strong class="ms-3 mx-auto">
+			<i class="bi bi-6-square-fill"></i>
+			Etape 6
+		</strong>
+		<p class="ms-3 mx-auto">Terminez par</p>
+		<div class="card-fav">
+			<img src="{{ asset('build/images/creme2.png') }}" alt="image du produit">
+			<img src="{{ asset('build/images/fondation.png') }}" alt="image du produit">
+		</div>
 	</div>
 {% endblock %}
