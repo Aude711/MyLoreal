@@ -15,6 +15,7 @@ $heightMediumCard: 6rem;
 
 $widthBigCard: 20rem;
 $heightBigCard: 25rem;
+$heightBigCardBis: 32rem;
 
 $widthPriceCard: 20rem;
 $heightPriceCard: 4rem;
@@ -46,6 +47,11 @@ $boxShadowCard: -1px 2px 10.7px 1px  rgba(0, 0, 0, 0.55);
     border-radius: $borderRadiusSmallCard;
 }
 @mixin bigCard($x, $y, $borderRadiusCard) {
+    width: $x;
+    height: $y;
+    border-radius: $borderRadiusCard;
+}
+@mixin bigCardBis($x, $y, $borderRadiusCard) {
     width: $x;
     height: $y;
     border-radius: $borderRadiusCard;
@@ -140,6 +146,12 @@ body{
     background-color: var(--background-card);
     box-shadow: -1px 2px 10.7px 1px  rgba(0, 0, 0, 0.55);
     @include bigCard(($widthBigCard), ($heightBigCard), ($borderRadiusCard));
+}
+
+.card-big-bis {
+    background-color: var(--background-card);
+    box-shadow: -1px 2px 10.7px 1px  rgba(0, 0, 0, 0.55);
+    @include bigCardBis(($widthBigCard), ($heightBigCardBis), ($borderRadiusCard));
 }
 
 .card-price {
@@ -301,6 +313,7 @@ div.calendar {
   flex-shrink: 0;
   border-radius: 2.5rem;
   background: black;
+  opacity:25%;
 }
 
 div.calendar-big {
@@ -314,7 +327,7 @@ div.calendar-big {
   flex-shrink: 0;
   border-radius: 2.5rem;
   background: black;
-  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 2px 10.7px 1px  rgba(0, 0, 0, 0.55);
 }
 
 p {
