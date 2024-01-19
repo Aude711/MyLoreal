@@ -1,12 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap ');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap ');
+@import url(" https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap ");
 
 $widthCard: 20rem;
 $heightCard: 6.5rem;
 
 $widthSmallCard: 4rem;
 $heightSmallCard: 4rem;
+
+$widthSmallCardBis: 3rem;
+$heightSmallCardBis: 3rem;
 
 $widthMediumCard: 6rem;
 $heightMediumCard: 6rem;
@@ -25,7 +27,7 @@ $heightCardButton: 5rem;
 
 $borderRadiusCard: 1.25rem;
 $borderRadiusSmallCard: 0.55rem;
-$boxShadowCard: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
+$boxShadowCard: -1px 2px 10.7px 1px  rgba(0, 0, 0, 0.55);
 
 @mixin card($x, $y, $borderRadiusCard, $boxShadowCard) {
     width: $x;
@@ -67,13 +69,14 @@ $boxShadowCard: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
 
 :root {
     --background-color: #f9f9f9;
-    --link-hover: #76660f;
-    --background-card: black;
-    --color: white;
-    --color-bis: #ffffff;
-    --titre: ' Amiri ';
-    --text: ' Robot ';
-    --color-grey: white;
+    --link-hover: #ecb390;
+    --background-card: #131313;
+    --color: black;
+    --color-bis: #cee5d0;
+    --text: 'Roboto', sans-serif;
+    --color-grey: #d9d9d9;
+    --text-color: #f5f5f5;
+    --navbar-color:
 }
 
 * {
@@ -91,6 +94,7 @@ body{
 
 .card-date {
     background-color: var(--background-card);
+    
     @include card(
         ($widthCard),
         ($heightCard),
@@ -102,17 +106,29 @@ body{
 .card-small {
     font-size: x-large;
     font-weight: bolder;
-    background-color: var(--color-grey);
+    background-color: var(--background-color);
+    box-shadow: -3px 5px 9px 1px  rgba(0, 0, 0, 0.15);
     @include smallCard(
         ($widthSmallCard),
         ($heightSmallCard),
         ($borderRadiusSmallCard)
     );
 }
+.card-small-bis {
+  font-size: x-large;
+  font-weight: bolder;
+  background-color: var(--background-color);
+  box-shadow: -3px 5px 9px 1px  rgba(0, 0, 0, 0.15);
+  @include smallCard(
+      ($widthSmallCardBis),
+      ($heightSmallCardBis),
+      ($borderRadiusSmallCard)
+  );
+}
 .card-medium {
     font-size: x-large;
     font-weight: bolder;
-    background-color: var(--color-grey);
+    background-color: transparent;
     @include mediumCard(
         ($widthMediumCard),
         ($heightMediumCard),
@@ -122,11 +138,13 @@ body{
 
 .card-big {
     background-color: var(--background-card);
+    box-shadow: -1px 2px 10.7px 1px  rgba(0, 0, 0, 0.55);
     @include bigCard(($widthBigCard), ($heightBigCard), ($borderRadiusCard));
 }
 
 .card-price {
     background-color: var(--background-card);
+    box-shadow: -1px 2px 10.7px 1px  rgba(0, 0, 0, 0.55);
     @include bigCard(
         ($widthPriceCard),
         ($heightPriceCard),
@@ -165,27 +183,27 @@ body{
 
 .btnRoutine {
   align-items: center;
-  justify-content: space-evenly;
   border-radius: 1rem;
-  width: 10rem;
-  margin: auto;
   background-color: var(--background-card);
-  color: var(--color);
+  color: var(--text-color);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .navbar {
-  background-color: var(--background-card);
-  border-radius: 1rem;
-  justify-content: space-evenly;
-  backdrop-filter:blur(9.2px);
+
+    background-color: var(--background-color);
+    border-radius: 1rem;
+    justify-content: space-evenly;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
 }
 
 .navbar a {
-  float: left;
-  text-align: center;
-  justify-content: space-around;
-  color: var(--color);
-}
+    float: left;
+    text-align: center;
+    justify-content: space-around;
+    color: var(--background-card);
+   }
 
 .navbar a i {
   justify-content: space-around;
@@ -210,22 +228,22 @@ body{
     background-color: var(--background-card);
     border-radius: 18px;
     color: var(--color);
-    height: 20rem;
+    height: 12rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .profile-card .question {
-    font-family: var(--titre);
-    font-size: 24px;
+    font-family: var(--text);
+    color: var(--text-color);
 }
 
 .profile-card .response {
     font-family: var(--text);
-    font-size: 20px;
+    color: var(--text-color);
 }
 
 h1 {
-  font-family: var(--titre);
-  font-size: 32px;
+    font-size: 32px;
 }
 
 .analyse-peau {
@@ -321,14 +339,14 @@ div.img {
 }
 
 .slide-image{
-  background: #D9D9D9;
   border-radius: 2rem;
   box-shadow: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
-
+  margin-bottom: 2rem;
+  width: 7rem;
 }
 
 .slide-image img{
-  max-width: 15rem;
+  max-width: 8rem;
   gap: 5rem;
 
 }
@@ -341,3 +359,15 @@ div.img {
     color: white;
     padding-top: 0.5rem !important;
 }
+
+p{
+    color: var(--background-card);
+}
+.bi-caret-left-square-fill{
+    color: var(--background-card);
+}
+
+.mt-6{
+    margin-top: 5rem;
+}
+

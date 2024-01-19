@@ -9,104 +9,106 @@
     <p class="pt-2 m-0">Prochaine routine expédiée</p>
     <h4 class="mb-3 fw-bold">Mercredi 17 février 2024</h4>
 <div class="d-flex align-items-start justify-content-center w-75 gap-2 mx-auto">
-    <i class="bi bi-lightning-charge d-flex flex-column mx-auto card-small align-items-center justify-content-center border border-3 border-warning"></i>
-    <i class="bi bi-calendar-week d-flex flex-column card-small align-items-center justify-content-center border border-3 border-warning"></i>
-    <i class="bi bi-trash3 d-flex flex-column mx-auto card-small align-items-center justify-content-center border border-3 border-warning"></i>
+    <i class="bi bi-lightning-charge-fill d-flex flex-column mx-auto card-small align-items-center justify-content-center "></i>
+    <i class="bi bi-calendar-event-fill d-flex flex-column card-small align-items-center justify-content-center "></i>
+    <i class="bi bi-trash-fill d-flex flex-column mx-auto card-small align-items-center justify-content-center "></i>
 </div>
 </div>
 
-<div class="container card-big ">
+<div class="mt-6">
+<div class="container card-big my-5">
     <h2 class="pt-2 m-0">Détails</h2>
     <h5 class="mb-3">de la prochaine routine</h5>
 
-    <div class="container ">
-
+    <div class="container">
         <div class="row row-cols-2">
-            <div><img src="{{ asset('build/images/creme-1.png') }}" class="card-medium object-fit-cover mb-2"/></div>
-            <div class="col fw-bold">
-                <p>Crême hydratante</p>
+            <div><img src="{{ asset('build/images/panier1.png') }}" class="card-medium object-fit-cover mb-2"/></div>
+            <div class="col">
+                <p class="text-white fw-bold">Rouge à levres</p>
+                <p class="text-white">Quantité 2</p>
             </div>
         </div>
         <div class="row row-cols-2">
-            <div><img src="{{ asset('build/images/mascara.png') }}" class="card-medium object-fit-cover mb-2"/></div>
-            <div class="col fw-bold">
-                <p>Mascara waterproof</p>
+            <div><img src="{{ asset('build/images/panier2.png') }}" class="card-medium object-fit-cover mb-2"/></div>
+            <div class="col">
+                <p class="text-white fw-bold">Crème nourissante</p>
+                <p class="text-white">Quantité 1</p>
             </div>
         </div>
         <div class="row row-cols-2">
-            <div><img src="{{ asset('build/images/creme-nettoyante.png') }}" class="card-medium object-fit-cover mb-2"/></div>
-            <div class="col fw-bold">
-                <p>Crême nettoyante</p>
+            <div><img src="{{ asset('build/images/panier3.png') }}" class="card-medium object-fit-cover mb-2"/></div>
+            <div class="col">
+                <p class="text-white fw-bold">Matifiant</p>
+                <p class="text-white">Quantité 1</p>
             </div>
         </div>
 
     </div>
-
+</div>
 </div>
 
 <div class="container card-price my-3">
-    <p class="pt-2 m-0">Valeur de votre routine</p>
+    <p class="pt-2 m-0 ms-3">Valeur de votre routine</p>
     <h4 class="mb-3 fw-bold d-flex justify-content-end">125,00€</h4>
 </div>
 
-<div class="d-flex justify-content-between mx-4 mb-3">
-<h4 class="my-0">Pour vous</h4>
-<p class="my-0">Voir plus > </p>
+<div class="d-flex justify-content-between align-items-center mx-4 mt-6">
+<p class="text-black"><i class="bi bi-gift-fill"></i> Ajoutez un <strong>produit</strong> à votre routine.</p>
 </div>
 
 <div class="d-flex flex-nowrap overflow-x-scroll mb-5">
 
-    <div class="d-flex flex-row mx-4 gap-2">
+    <div class="d-flex flex-row mx-4 gap-2 mb-3">
         <div class="position-relative">
             <img src="{{ asset('build/images/creme-soin.png') }}" class="card-slider object-fit-cover"/>
-            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-2">
-                <a href="/subscribed/routine/show" role="button" class="d-flex link-underline link-underline-opacity-0 link-light">
-                    <i class="bi bi-plus-circle">Ajouter</i>
+            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-3">
+                <a href="/subscribed/routine/show" role="button" class="d-flex link-underline link-underline-opacity-0 link-light ">
+                    <i class="bi bi-plus-circle">       Ajouter</i>
                 </a>
             </div>
     </div>
     <div class="d-flex flex-row gap-2">
         <div class="position-relative">
             <img src="{{ asset('build/images/creme-baume.png') }}" class="card-slider object-fit-cover"/>
-            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-2">
+            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-3">
                 <a href="#" role="button" class="d-flex link-underline link-underline-opacity-0 link-light">
-                    <i class="bi bi-plus-circle">Ajouter</i>
+                    <i class="bi bi-plus-circle">       Ajouter</i>
                 </a>
             </div>
     </div>
     <div class="d-flex flex-row gap-2">
         <div class="position-relative">
             <img src="{{ asset('build/images/fond-teint.png') }}" class="card-slider object-fit-cover"/>
-            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-2">
+            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-3">
                 <a href="#" role="button" class="d-flex link-underline link-underline-opacity-0 link-light">
-                    <i class="bi bi-plus-circle">Ajouter</i>
+                    <i class="bi bi-plus-circle">       Ajouter</i>
                 </a>
             </div>
     </div>
     <div class="d-flex flex-row gap-2">
         <div class="position-relative">
             <img src="{{ asset('build/images/fondation.png') }}" class="card-slider object-fit-cover"/>
-            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-2">
+            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-3">
                 <a href="#" role="button" class="d-flex link-underline link-underline-opacity-0 link-light">
-                    <i class="bi bi-plus-circle">Ajouter</i>
+                    <i class="bi bi-plus-circle">       Ajouter</i>
                 </a>
             </div>
     </div>
     <div class="d-flex flex-row gap-2">
         <div class="position-relative">
             <img src="{{ asset('build/images/matifiant.png') }}" class="card-slider object-fit-cover"/>
-            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-2">
+            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-3">
                 <a href="#" role="button" class="d-flex link-underline link-underline-opacity-0 link-light">
-                    <i class="bi bi-plus-circle">Ajouter</i>
+                    <i class="bi bi-plus-circle">       Ajouter</i>
                 </a>
             </div>
     </div>
     <div class="d-flex flex-row gap-2">
         <div class="position-relative">
             <img src="{{ asset('build/images/creme-soin.png') }}" class="card-slider object-fit-cover"/>
-            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-2">
+            <div class="position-absolute bottom-0 d-flex card-button align-items-center justify-content-center fw-medium fs-3">
                 <a href="#" role="button" class="d-flex link-underline link-underline-opacity-0 link-light">
-                    <i class="bi bi-plus-circle">Ajouter</i>
+                    <i class="bi bi-plus-circle">       Ajouter</i>
                 </a>
             </div>
     </div>
