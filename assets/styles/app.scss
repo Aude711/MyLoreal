@@ -358,6 +358,13 @@ div.img {
   width: 7rem;
 }
 
+.slide-image{
+  border-radius: 2rem;
+  box-shadow: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+  width: 10rem;
+}
+
 .slide-image img{
   max-width: 8rem;
   gap: 5rem;
@@ -384,3 +391,13 @@ p{
     margin-top: 5rem;
 }
 
+
+.page-link.active, .active > .page-link {
+  background-color: #131313;
+  margin-bottom: 2rem;
+  border-color: #131313;
+}
+
+.page-link{
+  color: #131313;
+}
