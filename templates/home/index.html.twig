@@ -5,20 +5,33 @@
 {% block body %}
 
 <div class="w-75 mx-auto mb-5">
-	<h1>Bonjour Camille</h1>
+	<h1>Bonjour, <strong>Camille</strong></h1>
 	<h6>Prenez soin de votre corps</h6>
 </div>
 
-<a type="button" href="/daily" class=" btn d-flex my-5 btnRoutine fw-bold">Daily routine</a>
-<h4 class="w-75 mx-auto">Pour vous</h4>
-<div class="d-flex flex-row overflow-x-scroll mt-3 mb-5">
+<a type="button" href="/daily" class=" btn d-flex mx-auto my-5 btnRoutine fw-bold justify-content-center w-75">
+<i class="mx-2 bi bi-clipboard-heart-fill "></i>Daily routine</a>
 
-<div class="d-flex flex-row mx-5 gap-3 slide">
-	<div class="slide-image"><image src="{{ asset('build/images/biocremer.png')}}"></div>
-	<div class="slide-image"><image src="{{ asset('build/images/creme2.png')}}"></div>
-	<div class="slide-image"><image src="{{ asset('build/images/shampoo-removebg-preview.png')}}"></div>
-	<div class="slide-image"><image src="{{ asset('build/images/loreal2.png')}}"></div>
+<p class="ms-3 mx-auto"><i class="bi bi-1-square-fill"></i> Les dernières <strong>tendances</strong> du moment</p>
+
+<div class="d-flex flex-row overflow-x-scroll mt-3 mb-3">
+<div class="d-flex flex-row mx-5 gap-3">
+	<div><image src="{{ asset('build/images/produit2.png')}}" class="slide-image"></div>
+	<div><image src="{{ asset('build/images/produit3.png')}}" class="slide-image"></div>
+	<div><image src="{{ asset('build/images/produit4.png')}}" class="slide-image"></div>
+</div>
+</div>
+<p class="ms-3 mx-auto"><i class="bi bi-2-square-fill"></i> Retrouvez les posts <strong>tendances</strong></p>
+<div class="d-flex flex-row overflow-x-scroll mt-3 mb-5">
+<div class="d-flex flex-row mx-5 gap-3">
+	<div><image src="{{ asset('build/images/article4.png')}}" class="slide-image"></div>
+	<div><image src="{{ asset('build/images/article2.png')}}" class="slide-image"></div>
+	<div><image src="{{ asset('build/images/article1.png')}}" class="slide-image"></div>
+	<div><image src="{{ asset('build/images/article5.png')}}" class="slide-image"></div>
+	<div><image src="{{ asset('build/images/article3.png')}}" class="slide-image"></div>
+	<div><image src="{{ asset('build/images/article6.png')}}" class="slide-image"></div>
+</div>
 </div>
 
-
 {% endblock %}
+ 

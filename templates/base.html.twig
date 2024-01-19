@@ -17,7 +17,14 @@
 			{{ encore_entry_script_tags('app') }}
 		{% endblock %}
 	</head>
-    {% block header %}{% include "/_headPhoto.html.twig" %}{% endblock %}
+    {% block header %}  
+ <div class="position-relative">
+       <img src="{{ asset('build/images/logo-loreal.png')}}" class="position-absolute w-25 mt-5 ms-5"/>
+     
+        {% include "/_headPhoto.html.twig" %}
+    </div>
+
+    {% endblock %}
 	<body>
 	
 		{% block body %}{% endblock %}

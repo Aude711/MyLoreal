@@ -7,6 +7,9 @@ $heightCard: 6.5rem;
 $widthSmallCard: 4rem;
 $heightSmallCard: 4rem;
 
+$widthSmallCardBis: 3rem;
+$heightSmallCardBis: 3rem;
+
 $widthMediumCard: 6rem;
 $heightMediumCard: 6rem;
 
@@ -24,7 +27,7 @@ $heightCardButton: 5rem;
 
 $borderRadiusCard: 1.25rem;
 $borderRadiusSmallCard: 0.55rem;
-$boxShadowCard: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
+$boxShadowCard: -1px 2px 10.7px 1px  rgba(0, 0, 0, 0.55);
 
 @mixin card($x, $y, $borderRadiusCard, $boxShadowCard) {
     width: $x;
@@ -91,6 +94,7 @@ body{
 
 .card-date {
     background-color: var(--background-card);
+    
     @include card(
         ($widthCard),
         ($heightCard),
@@ -102,17 +106,29 @@ body{
 .card-small {
     font-size: x-large;
     font-weight: bolder;
-    background-color: var(--color-grey);
+    background-color: var(--background-color);
+    box-shadow: -3px 5px 9px 1px  rgba(0, 0, 0, 0.15);
     @include smallCard(
         ($widthSmallCard),
         ($heightSmallCard),
         ($borderRadiusSmallCard)
     );
 }
+.card-small-bis {
+  font-size: x-large;
+  font-weight: bolder;
+  background-color: var(--background-color);
+  box-shadow: -3px 5px 9px 1px  rgba(0, 0, 0, 0.15);
+  @include smallCard(
+      ($widthSmallCardBis),
+      ($heightSmallCardBis),
+      ($borderRadiusSmallCard)
+  );
+}
 .card-medium {
     font-size: x-large;
     font-weight: bolder;
-    background-color: var(--color-grey);
+    background-color: transparent;
     @include mediumCard(
         ($widthMediumCard),
         ($heightMediumCard),
@@ -122,11 +138,13 @@ body{
 
 .card-big {
     background-color: var(--background-card);
+    box-shadow: -1px 2px 10.7px 1px  rgba(0, 0, 0, 0.55);
     @include bigCard(($widthBigCard), ($heightBigCard), ($borderRadiusCard));
 }
 
 .card-price {
     background-color: var(--background-card);
+    box-shadow: -1px 2px 10.7px 1px  rgba(0, 0, 0, 0.55);
     @include bigCard(
         ($widthPriceCard),
         ($heightPriceCard),
@@ -165,12 +183,10 @@ body{
 
 .btnRoutine {
   align-items: center;
-  justify-content: space-evenly;
   border-radius: 1rem;
-  width: 10rem;
-  margin: auto;
   background-color: var(--background-card);
-  color: var(--color);
+  color: var(--text-color);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .navbar {
@@ -212,7 +228,8 @@ body{
     background-color: var(--background-card);
     border-radius: 18px;
     color: var(--color);
-    height: 13rem;
+    height: 12rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .profile-card .question {
@@ -322,14 +339,14 @@ div.img {
 }
 
 .slide-image{
-  background: #D9D9D9;
   border-radius: 2rem;
   box-shadow: 0px 0px 10.7px 1px rgba(0, 0, 0, 0.08);
-
+  margin-bottom: 2rem;
+  width: 7rem;
 }
 
 .slide-image img{
-  max-width: 15rem;
+  max-width: 8rem;
   gap: 5rem;
 
 }
@@ -342,3 +359,15 @@ div.img {
     color: white;
     padding-top: 0.5rem !important;
 }
+
+p{
+    color: var(--background-card);
+}
+.bi-caret-left-square-fill{
+    color: var(--background-card);
+}
+
+.mt-6{
+    margin-top: 5rem;
+}
+
